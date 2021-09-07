@@ -1,16 +1,5 @@
-// comparison operator
-// const a=21
-// const b=7
-// const c=21
-
-// console.log('a>b', a>b)
-// console.log('a<b', a<b)
-// console.log('a==b', a==b)
-// console.log('a==c', a==c)
-
-const a = 11
-const b= '11'
-console.log(a==b)
-console.log(a===b)
-// (===) = (==) && type
-
+// const element = document.getElementById('selectme')
+// const element = document.getElementsByClassName('heading')
+// const element = document.getElementsByTagName('h2')
+const element = document.querySelector('h3.heading')
+console.log(element)
