@@ -1,16 +1,70 @@
-// Data Types in js
-// let Name = "Dev"
-// console.log(Name)
+console.log("merged class 1 ES6")
 
-let age = 19;
-// console.log(typeof age)
-let Name = 'hsgyugwdydgydfydgfyfd'
-let brand 
-console.log(brand)
-console.log(Name)
+// normal array calling way
+const arr = [1,2,3,4]
+console.log(arr[2])
 
-let arr = [1,2,3,4,5]
-console.log(arr)
-console.log(typeof arr)
-arr.push("15sept")
-console.log(arr)
+// ES6 destructuring manner
+const [one,two,three] = arr
+console.log(three)
+
+function getScores() {
+    return [90,100]
+}
+
+let [x,y,z] = getScores()
+console.log(x)
+console.log(y)
+console.log(z)
+// const is immutable, hence we use let/var
+
+
+// normal object destructuring
+const obj = {
+    name: "Dev Gaur",
+    email: "devgaur15",
+    age: 20
+}
+console.log(obj.email)
+
+// ES6 object destructuring
+let {name,email,age, dum} = obj;
+console.log(email)
+let person = {
+    firstname: "Dev",
+    lastname: "Gaur",
+    age1: 21,
+    middlename: "DNA"
+}
+let {age1, firstname, lastname, middlename="" } = person;
+console.log(age1);
+console.log(firstname);
+console.log(lastname);
+console.log(middlename);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
