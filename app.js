@@ -1,31 +1,23 @@
-console.log("merged class 1 ES6")
-// ES6 arrow functions
-// function add(x, y) {
-//     return x+y;
-// }
-// console.log(add(10, 20));
+console.log("MERGED CLASS 2 ES6");
 
-// let add = function(x,y) {
-//     return x+y;
-// }
-// console.log(add(10,20))
+let ranks = [1, 2, 3, 4];
 
-// ES6 arrow function
-let add = (x, y) => {
-    return x + y;
-  };
-  console.log(add(10, 20));
+console.log(
+  ranks.map((e, index) => {
+    return e * 100;
+  })
+);
 
-  const counter = {
-    count: 1,
-    nikhil: function() {
-        return ++(this.count);
-    },
-    // key: this
-}
-console.log(counter)
-console.log(counter.nikhil());
-console.log(counter.nikhil());
-console.log(counter.nikhil());
-console.log(counter)
-  
+console.log(
+  ranks.forEach((e, index) => {
+    return e * 100;
+  })
+);
+
+let newarr = ranks.map((e, index) => {
+    console.log(e)
+    console.log(index)
+    if(e%2===0)
+        return e
+})
+console.log(newarr);
